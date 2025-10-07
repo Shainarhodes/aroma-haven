@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aroma Haven - Your Daily Ritual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #5C3A21;
+      --color-secondary: #A0664B;
+      --color-accent: #E8D5C4;
+      --color-dark: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--color-dark);
+      background-color: var(--color-accent);
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--color-primary);
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1557997380-530962e24d27?fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 3em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .plc-sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .plc-card {
+      flex: 1 1 calc(50% - 40px);
+      min-width: 300px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .plc-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plc-card h2 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .plc-card p {
+      margin-bottom: 20px;
+    }
+
+    .plc-note {
+      font-size: 0.9em;
+      font-style: italic;
+      color: var(--color-secondary);
+      margin-top: 15px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 10px;
+    }
+
+    .introduction { background-color: #F8F4EF; border-left: 5px solid #6D9773; }
+    .growth { background-color: #F0EAD2; border-left: 5px solid #FFC300; }
+    .maturity { background-color: #E6E0D8; border-left: 5px solid #5C3A21; }
+    .decline { background-color: #D3C9BE; border-left: 5px solid #4A4A4A; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn.primary {
+      background-color: var(--color-primary);
+      color: white;
+    }
+
+    .btn.primary:hover {
+      background-color: #4A2E1A;
+    }
+
+    .btn.secondary {
+      background-color: var(--color-secondary);
+      color: white;
+    }
+
+    .btn.secondary:hover {
+      background-color: #8D5A3F;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: var(--color-primary);
+      color: var(--color-accent);
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 80px 15px;
+      }
+      .hero h1 {
+        font-size: 2.2em;
+      }
+      .plc-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="logo">☕ Aroma Haven</div>
+    <h1>"Your Daily Ritual, From Seed to Soul"</h1>
+    <p class="quote">"Every cup tells a story. What's yours?"</p>
+  </header>
+
+  <main class="plc-sections">
+
+    <section class="plc-card introduction">
+      <h2>The Seed of a Dream (Introduction Stage)</h2>
+      <p>Discover our <strong>freshly roasted blends</strong>, a new beginning for coffee lovers. Experience the pure essence of coffee in its most authentic form. Be among the first to taste what's brewing!</p>
+      <a href="https://aromahaven.com/story" class="btn primary">Explore Our Story</a>
+      <p class="plc-note">Focus: Market Penetration, High Costs, Low Sales.</p>
+    </section>
+
+    <section class="plc-card growth">
+      <h2>Flourishing Together (Growth Stage)</h2>
+      <p>Join the <strong>buzz</strong>! New seasonal drinks and community events are making Aroma Haven the place to be. Our growing popularity is a testament to your love! We're expanding to serve you better.</p>
+      <a href="https://aromahaven.com/menu" class="btn secondary">View Seasonal Menu</a>
+      <p class="plc-note">Focus: Rapid Sales Growth, Building Brand Preference, New Offerings.</p>
+    </section>
+
+    <section class="plc-card maturity">
+      <h2>Rooted in Quality (Maturity Stage)</h2>
+      <p>Your <strong>trusted daily escape</strong>. Classic and unwavering quality that
